@@ -38,6 +38,8 @@ int	ft_print_ptr(void *ptr)
 	if (ret == -1)
 		return (-1);
 	count += ret;
-	count += ft_print_hexptr(nptr);
-	return (count);
+	ret = ft_print_hexptr(nptr);
+	if (ret == -1)
+		return -1;
+	return (count + ret);
 }

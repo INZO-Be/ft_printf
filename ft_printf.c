@@ -56,7 +56,7 @@ int	ft_printf(const char *s, ...)
 	i = 0;
 	count = 0;
 	if (!s)
-		return (0);
+		return (-1);
 	va_start(l, s);
 	count += ft_check_ret(s, &l, i, count);
 	va_end(l);
